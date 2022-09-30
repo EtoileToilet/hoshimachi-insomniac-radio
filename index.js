@@ -37,34 +37,8 @@ client.on('ready', () => {
         var min = Math.floor(info.videoDetails.lengthSeconds / 60)
         var sec = info.videoDetails.lengthSeconds % 60
         var color = "#000000"
-        if (who.includes("Mori") == true) {
-          color = "#C90D40"
-        } else if (who.includes("Kiara") == true) {
-          color = "#FF511C"
-        } else if (who.includes("Ina'nis") == true) {
-          color = "#62567E"
-        } else if (who.includes("Gura") == true) {
-          color = "#5D81C7"
-        } else if (who.includes("Amelia") == true) {
-          color = "#F8DB92"
-        } else if (who.includes("Sana") == true) {
-          color = "#F2D7C4"
-        } else if (who.includes("Fauna") == true) {
-          color = "#A4E5CF"
-        } else if (who.includes("Kronii") == true) {
-          color = "#0869EC"
-        } else if (who.includes("Mumei") == true) {
-          color = "#998274"
-        } else if (who.includes("Baelz") == true) {
-          color = "#D2251E"
-        } else if (who.includes("IRyS") == true) {
-          color = "#3C0024"
-        } else if (who.includes("Watame") == true) {
-          color = "#F6ECA5"
-        } //special guest 1
-          else if (who.includes("Rikka") == true) {
-          color = "#EAB3B8"
-        } //special guest 2
+        if (who.includes("Suisei") == true) {
+          color = "#7BACEC"
         else {
           color = "#FFFFFF"
         }
@@ -76,7 +50,7 @@ client.on('ready', () => {
           .setThumbnail(big)
           .addField("Duration", `${min} min ${sec} sec`)
           .setImage(`https://i.ytimg.com/vi/${info.videoDetails.videoId}/maxresdefault.jpg`)
-          .setFooter ('HoloEN Insomniac Radio', 'https://cdn.donmai.us/original/28/97/__mori_calliope_and_death_sensei_hololive_and_1_more_drawn_by_hurybone__2897434bbc538556a039edfb23ee74ab.jpg');
+          .setFooter ('Hoshimachi Insomniac Radio', 'https://yt3.ggpht.com/ytc/AMLnZu-0m7dbn-y21dl-MfaM8t36EbRRwib1hnHzCMkwbg=c-k-c0x00ffffff-no-rj');
         client.channels.cache.get(text_id).send(`:arrow_forward: Now playing: **${info.videoDetails.title}**`, {embed: embedtest });
         client.user.setActivity(`${info.videoDetails.title}`,{
           type: "LISTENING"
